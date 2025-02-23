@@ -2,6 +2,7 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
+    --blue-grey-800: #78909C;
     --blue-grey-900: #263238;
 }
 
@@ -11,7 +12,339 @@ body {
 }
 
 header, footer {
-    background-color: var(--blue-grey-50);
     color: #fff;
     padding: 2rem 4rem;   
+}
+header{
+    background-color: #111111;
+}
+header img,
+footer img {
+    max-height: 5rem;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+img {
+    border-radius: 7px;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 1rem 0 0 0;
+}
+
+nav {
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+/* ========== UTILITY CLASSES ========== */
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 4rem 2rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.logo-container h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem; 
+    white-space: nowrap;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.grey-bg {
+    background-color: var(--blue-grey-50);
+}
+
+.darkgrey-bg {
+    background-color: var(--blue-grey-100);
+}
+
+.grey-dark-blue-bg {
+    background-color: var(--blue-grey-900);
+}
+
+.blue-background {
+    background-color: var(--blue-grey-800);
+}
+
+/* ========== TYPOGRAPHY ========== */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2,
+blockquote > p,
+.cta p:first-child {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 3.375rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.915rem;
+    font-weight: 700;
+    
+}
+
+span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}
+
+footer p {
+    color: var(--blue-grey-200);
+    font-size: 0.75rem;
+}
+
+/* ========== HOME PAGE ========== */
+.mainpage-content {
+    text-align: center;
+}
+.info {
+    max-width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.info p {
+    margin-top: 1rem;
+}
+
+.info img {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 8px;
+    margin-bottom: 4rem;
+
+}
+
+.info .btn {
+    margin: 2.25rem 0 0 0;
+}
+
+.company-info p {
+    margin-top: 2rem;
+
+}
+
+
+.company-info div {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+}
+
+/* ========== INFO LIST  ========== */
+.info-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+    text-align: left;
+}
+
+.info-list div {
+    flex: 1 1 calc(33.333% - 2rem);
+    max-width: 350px;
+
+}
+
+/* ========== QUOTE SECTION ========== */
+
+.ceo-quote {
+    margin-top: 3rem;
+}
+
+.ceo-quote p:last-child {
+    margin-top: 1rem;
+}
+.quote {
+    color: white;
+}
+
+/* ========== ARCHITECTURE SECTION ========== */
+.architecture {
+    text-align:center;
+    padding: 2rem 2rem 4rem;
+    background-color: var(--blue-grey-100);
+}
+
+.architecture p {
+    margin-top: 1.5rem;
+}
+
+.architecture img {
+    margin-top: 3rem;
+}
+
+/* ========== RESIDENTIAL & COMMERCIAL SECTIONS (FIXED LAYOUT) ========== */
+
+.residential div,
+    .residential img,
+    .commercial div,
+    .commercial img {
+        width: 100%;
+    }
+.residential div,
+.commercial div {
+    text-align: left;
+}
+
+
+.commercial img {
+     order: -1;
+}
+
+/* ========== CALL TO ACTION (CTA) SECTION ========== */
+.cta {
+    background-color: white;
+    border-radius: 8px;
+    padding: 4rem 1rem;
+}
+
+.cta p {
+    margin-top: 1rem;
+}
+
+.cta .btn {
+    margin-top: 2rem;
+}
+.footer {
+    background-color: #191919;
+    color: white;
+    padding: 3rem ;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+/* Left Section: Logo & Description */
+.footer-brand {
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-brand h2 {
+    font-size: 5rem;
+
+}
+
+.footer-brand img {
+    display: block;
+    max-width: 100px;
+    margin: 1rem 0;
+}
+
+/* Right Section: Footer Links */
+.footer-links {
+    display: flex;
+    gap: 4rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom Section: Disclaimer */
+.footer-disclaimer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--blue-grey-200);
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+
+
+/* ========== MEDIA QUERIES ========== */
+
+
+@media screen and (min-width: 1000px) {
+   
+    .lg-flex {
+        display: flex;
+        column-gap: 1.5rem;
+    }
+
+ 
+    .residential.md-flex,
+    .commercial.md-flex {
+        flex-direction: column;
+    }
+
+    .residential,
+    .commercial {
+        width: 100%;
+    }
+
+
+    .commercial img {
+        order: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 1.75rem; 
+        line-height: 2.5rem;
+    }
+    
 }
