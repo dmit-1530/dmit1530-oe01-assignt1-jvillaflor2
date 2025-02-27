@@ -2,7 +2,8 @@
     --blue-grey-50: #ECEFF1;
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
-    --blue-grey-800: #78909C;
+    --blue-grey-400: #78909C;
+    --blue-grey-800: #37474F;
     --blue-grey-900: #263238;
 }
 
@@ -39,6 +40,7 @@ nav {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    display: flex;
 }
 
 .btn {
@@ -119,8 +121,9 @@ h3 {
 
 span {
     font-size: 2.5rem;
-    font-weight: 700;
     line-height: 3.375rem;
+    font-weight: 700;
+    
 }
 
 footer p {
@@ -228,6 +231,46 @@ footer p {
 .commercial img {
      order: -1;
 }
+
+/*==========  Gallery Page  ========== */
+.about-gallery h2 {
+    text-align: center;
+}
+
+
+.about-gallery div {
+    margin-top: 3rem;
+}
+.about-gallery p {
+    margin-top: 2rem;
+}
+
+.company-quote {
+    text-align: center;
+}
+
+.hub-cultural {
+    background-color: var(--blue-grey-400);
+    color: white;
+}
+.hub-cultural p {
+    margin-top: 1.5rem;
+}
+
+.features {
+    background-color: var(--blue-grey-800);
+    color: white;
+}
+
+
+.features p{
+    margin-top: 1rem;
+}
+
+.features figure {
+    margin-top: 4rem;
+}
+
 
 /* ========== CALL TO ACTION (CTA) SECTION ========== */
 .cta {
@@ -340,11 +383,46 @@ footer p {
     .commercial img {
         order: 0;
     }
+    .about-gallery.text-container {
+        margin-top: 3rem;
+    }
+
+
+    .features .text-container {
+        flex: 1 1 70%;
+    }
+  
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
+
+
+    .md-flex {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
     h2 {
         font-size: 1.75rem; 
         line-height: 2.5rem;
     }
-    
+    /* Gallery Page */
+    .about-gallery figure {
+        order: 1;
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-gallery .text-container {
+        margin-top: unset;
+    }
+
+    .about-gallery div:first-of-type img {
+        margin: unset;
+        width: 100%;
+    }
+
+    .text-container {
+        width: 100%;
+    }
 }
